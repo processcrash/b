@@ -7,13 +7,6 @@ $(function () {
 	setEvent();
 });
 
-function getQueryParam(name) {
-	var reg = new RegExp("(^|&)"+ name +"=([^&]*)(&|$)");
-	var r = window.location.search.substr(1).match(reg);
-	if(r!=null) {return unescape(r[2]);}
-	return null;
-}
-
 function changeDiv(n) {
 	$(".nav3").removeClass("ck_nav");
 	$(".nav2").addClass("ck_nav");
