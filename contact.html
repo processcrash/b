@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>云瑞兆信</title>
+	<link rel="stylesheet" href="css/common.css">
+	<link rel="stylesheet" href="css/style.css" type="text/css">
+	<script type="text/javascript" src="js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+</head>
+<body>
+
+<!--头部-->
+<div class="top">
+
+	<div class="top_head">
+		<div class="top_logo pa"><a href="index.html" class="top_logo_link"></a></div>
+		<ul class="top_btnbox">
+			<li class="call_btn"><a href="contact.html">联系我们</a></li>
+			<li class="phone_btn"><a>手机端
+				<div class="codeimg_box pa"><img src="img/ewm.png"><br>扫一扫登录手机站</div>
+			</a></li>
+		</ul>
+	</div>
+
+	<div class="top_pic"><img src="img/top_bg3.png" width="100%"></div>
+
+	<div class="top_nav">
+		<div class="nav box_center">
+			<a class="nav1" href="index.html">HOME</a>
+			<a class="nav2" href="server.html?c=server">大数据服务</a>
+			<a class="nav3" href="server.html?c=product">大数据产品</a>
+			<a class="nav5" href="list.html">新闻动态</a>
+		</div>
+		<div class="clear"></div>
+	</div>
+
+	<div class="clear"></div>
+
+</div>
+
+<div class="main">
+	<div class="content_title pd60 pdTop50"><img src="img/contact.png" width="100%"></div>
+	<div class="fL width600 contact_img">
+		<div class="flexslider">
+			<ul class="slides">
+				<li><img src="img/contact01.jpg"/></li>
+				<li><img src="img/contact02.jpg"/></li>
+				<li><img src="img/contact03.jpg"/></li>
+				<li><img src="img/contact04.jpg"/></li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			$(document).ready(function () {
+				$('.flexslider').flexslider({
+					directionNav: true,
+					pauseOnAction: false,
+					animationDuration: 600,
+					animation: "slide",
+					slideshowSpeed: 3000,
+				});
+			});
+		</script>
+
+
+	</div>
+</div>
+<div class="fL width600 contact_img active">
+	<ul class="contact_ul">
+		<li class="contact_ul_li fL address width350">
+			<div class="contact_ul_li_img contact_01 "></div>
+			<p class="width350">杭州市西湖区天目山路294号杭钢冶金科技大厦15F</p>
+		</li>
+		<li class="contact_ul_li fL width160">
+			<div class="contact_ul_li_img contact_02 "></div>
+			<p class="width160">4001-011-366</p>
+		</li>
+		<div class="clearBox"></div>
+		<p class="line_list"></p>
+		<li class="contact_ul_li fL width350">
+			<div class="contact_ul_li_img contact_03"></div>
+			<p class="width350">service@yunrui.net</p>
+		</li>
+		<li class="contact_ul_li fL  width160 fenxiang">
+			<div class="contact_ul_li_img contact_04"></div>
+			<p class="width160">分享云瑞</p>
+		</li>
+	</ul>
+</div>
+</div>
+<div class="bg"></div>
+<div class="ewm_img "></div>
+<div class="address_map">
+
+</div>
+<div class="height200"></div>
+<!--底部-->
+<div class="bot">
+
+	<div class="bot_main box_center">
+
+		<div class="bot_menu">
+			<a class="nav1 " href="index.php">HOME</a>
+			<a class="nav2" href="/index.php?c=server">大数据服务</a>
+			<a class=" nav3" href="/index.php?c=product">大数据产品</a>
+			<a class="nav4 hide" href="">行业解决方案</a>
+			<a class="nav5 " href="/index.php?c=list">新闻动态</a>
+		</div>
+
+		<div class="bot_calltxt">
+			<div class="bot_calltit">联系我们</div>
+			<br>
+			<div class="fl">
+				<div class="bot_calllist fl">
+					<a class="bot_callli_btn sina_btn"></a>
+					<a class="bot_callli_btn WeChat_btn" data-id="WeChat_pic"></a>
+					<a class="bot_callli_btn phoneweb_btn" data-id="phoneweb_pic"></a>
+				</div>
+				<br>
+				<div class="bot_callcon fl">
+					<div>新浪微博：@云瑞兆信</div>
+					<div>官方邮箱：service@yunrui.net</div>
+					<div>官方客服：4001-011-366</div>
+				</div>
+			</div>
+			<div class="bot_callpic">
+				<img src="img/ewm1.png" class="WeChat_pic hide"/>
+				<img src="img/ewm.png" class="phoneweb_pic hide"/>
+			</div>
+		</div>
+
+		<div class="bot_info">
+			Copyright© 2016 云瑞兆信数据科技有限公司 / 浙ICP备16005858号
+		</div>
+
+	</div>
+
+</div>
+<!--底部-->
+<a class="back_btn pf" style="display:none;"></a>
+
+<script>
+	$(function () {
+		$(".address").on("click", function () {
+			$(".bg").show();
+			$(".address_map").show();
+		});
+		$(".weixin,.fenxiang").on("click", function () {
+			$(".bg").show();
+			$(".ewm_img").show();
+		});
+		$(".bg,.ewm_img,.address_map,.about_bottom").on("click", function () {
+			$(".bg").hide();
+			$(".ewm_img").hide();
+			$(".address_map").hide();
+			$(".about_bottom").hide();
+		});
+	})
+</script>
+</body>
+</html>
